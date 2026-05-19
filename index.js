@@ -98,7 +98,7 @@ const run = async () => {
       console.log("erro");
       await browser.close();
     } finally {
-      // await browser.close();
+      await browser.close();
     }
   // }
 };

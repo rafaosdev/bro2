@@ -43,7 +43,7 @@ const run = async () => {
       // }
     });
     try {
-      await page.goto(url_email, { waitUntil: "domcontentloaded" });
+      await page.goto(url_email, { waitUntil: "domcontentloaded", timeout: 120000, });
       await page.waitForSelector('div[x-text="selectedEmail.address"]');
       const email = await page.$eval(
         'div[x-text="selectedEmail.address"]',

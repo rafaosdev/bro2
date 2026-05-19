@@ -100,7 +100,7 @@ const run = async () => {
       console.log(e);
       // await browser.close();
     } finally {
-      // await browser.close();
+      await browser.close();
     }
   // }
 };
